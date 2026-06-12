@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoPainel | Monitoramento Verde</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+        <aside class="sidebar" id="barra-lateral">
+            <div class="sidebar-logo">
+                <span class="icone-sidebar">🌱</span>
+                <h2>EcoPainel</h2>
+            </div>
+            <nav class="sidebar-menu">
+                <a href="#" class="active"><span class="icone-menu">📊</span> Visão Geral</a>
+                <a href="#simulador-florestal"><span class="icone-menu">🌳</span> Reflorestamento</a>
+                <a href="#historico"><span class="icone-menu">⏳</span> Histórico</a>
+            </nav>
+            <div class="sidebar-footer">
+                <p>✅ Fazenda Certificada</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <div>
+                    <h1>Painel de Sustentabilidade</h1>
+                    <p class="subtitle">Propriedade: Fazenda Terra Nova (Cascavel - PR)</p>
+                </div>
+                <div class="header-direita">
+                    <div class="user-profile">
+                        <span class="icone-usuario">👤</span>
+                        <span>Produtor Agro</span>
+                    </div>
+                    <button id="btn-menu-dashboard" class="menu-toggle-dash">☰</button>
+                </div>
+            </header>
+
+            <section class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-info">
+                        <h3>Créditos Gerados</h3>
+                        <p class="metric-value" id="card-creditos">145.20</p>
+                        <span class="metric-unit">Créditos de Carbono (tCO₂e)</span>
+                    </div>
+                    <div class="metric-icon icone-verde">💵</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-info">
+                        <h3>Área Preservada</h3>
+                        <p class="metric-value">320</p>
+                        <span class="metric-unit">Hectares (Mata Nativa)</span>
+                    </div>
+                    <div class="metric-icon icone-azul">⛰️</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-info">
+                        <h3>Saúde do Solo</h3>
+                        <p class="metric-value">88%</p>
+                        <span class="metric-unit">Índice Nutricional Orgânico</span>
+                    </div>
+                    <div class="metric-icon icone-marrom">🔬</div>
+                </div>
+            </section>
+
+            <section id="simulador-florestal" class="panel-section">
+                <h2>🌳 Simulador de Expansão Florestal</h2>
+                <p>Insira quantas mudas de árvores nativas você planeja plantar para calcular a aceleração dos seus créditos ambientais.</p>
+                
+                <div class="simulator-box">
+                    <div class="input-inline">
+                        <label for="num-mudas">Quantidade de Mudas:</label>
+                        <input type="number" id="num-mudas" placeholder="Ex: 500" min="1">
+                        <button id="btn-simular" class="btn-primary">Simular Plantio</button>
+                    </div>
+
+                    <div id="resultado-simulacao" class="sim-result hidden">
+                        <div class="result-box">
+                            <span class="icone-resultado">📉</span>
+                            <div>
+                                <h4>Carbono Sequestrado por Ano:</h4>
+                                <p><span id="res-carbono">0</span> kg de CO₂</p>
+                            </div>
+                        </div>
+                        <div class="result-box">
+                            <span class="icone-resultado">🪙</span>
+                            <div>
+                                <h4>Novos Créditos de Carbono:</h4>
+                                <p>+ <span id="res-creditos-novos">0</span> un.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="historico" class="panel-section">
+                <h2>📋 Rastreabilidade e Certificação de Safra</h2>
+                <p>Grãos colhidos com técnicas de plantio direto e certificação de baixa emissão.</p>
+                
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Lote ID</th>
+                                <th>Cultura</th>
+                                <th>Volume (Toneladas)</th>
+                                <th>Emissão de CO₂</th>
+                                <th>Status Global</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#SOJA-2026-A</td>
+                                <td>Soja Sustentável</td>
+                                <td>1.200 t</td>
+                                <td class="text-green">-12% (Negativo)</td>
+                                <td><span class="status-badge badge-green">Pronto p/ Exportação</span></td>
+                            </tr>
+                            <tr>
+                                <td>#MILHO-2026-B</td>
+                                <td>Milho Safrinha</td>
+                                <td>850 t</td>
+                                <td class="text-green">-08% (Negativo)</td>
+                                <td><span class="status-badge badge-green">Pronto p/ Exportação</span></td>
+                            </tr>
+                            <tr>
+                                <td>#ALGO-2026-C</td>
+                                <td>Algodão Ecológico</td>
+                                <td>430 t</td>
+                                <td class="text-orange">+02% (Neutro)</td>
+                                <td><span class="status-badge badge-orange">Em Auditoria</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
