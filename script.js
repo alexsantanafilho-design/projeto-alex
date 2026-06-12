@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardCreditos = document.getElementById('card-creditos');
     let creditosAtuaisBase = 145.20;
 
-    // Lógica do simulador matemático
+    
     if (btnSimular && inputMudas && divResultados) {
         btnSimular.addEventListener('click', () => {
             const qtdMudas = parseInt(inputMudas.value);
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Lógica para abrir/fechar menu lateral no mobile (Estilo Humano)
+    
     const btnMenuDash = document.getElementById('btn-menu-dashboard');
     const barraLateral = document.getElementById('barra-lateral');
 
