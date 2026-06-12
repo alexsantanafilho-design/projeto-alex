@@ -20,7 +20,7 @@ body {
     min-height: 100vh;
 }
 
-/* Barra Lateral */
+
 .sidebar {
     background-color: #1e392a;
     color: #ffffff;
@@ -80,7 +80,7 @@ body {
     text-align: center;
 }
 
-/* Conteúdo Principal */
+
 .main-content {
     padding: 40px;
     overflow-y: auto;
@@ -129,7 +129,7 @@ body {
     color: #1e392a;
 }
 
-/* Grid de Cards */
+
 .metrics-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -180,7 +180,7 @@ body {
 .icone-azul { background-color: #3498db; }
 .icone-marrom { background-color: #a0522d; }
 
-/* Seções e Caixa do Simulador */
+
 .panel-section {
     background-color: #ffffff;
     padding: 30px;
@@ -262,7 +262,7 @@ body {
     color: #1e392a;
 }
 
-/* Tabelas */
+
 .table-responsive {
     width: 100%;
     overflow-x: auto;
@@ -297,7 +297,7 @@ body {
 .badge-green { background-color: #e8f5e9; color: #2e7d32; }
 .badge-orange { background-color: #fff3e0; color: #ef6c00; }
 
-/* Responsividade Responsável (Estilo Humano) */
+
 @media (max-width: 900px) {
     .dashboard-container {
         grid-template-columns: 1fr;
